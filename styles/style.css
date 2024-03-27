@@ -42,10 +42,10 @@ img {
 }
 
 .header h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   position: absolute;
-  left: 8rem;
+  left: 10rem;
 }
 
 a {
@@ -99,6 +99,10 @@ a:visited {
     margin: 0;
     padding-bottom: 1.25rem;
     margin-left: -2.1rem;
+  }
+
+  .header-menu li {
+    font-size: large;
   }
 }
 
@@ -209,7 +213,7 @@ main.introducao h1::after {
 @media (max-width: 51.87rem) {
   .introducao {
     grid-template-columns: 1fr;
-    width: 700px;
+    width: 59rem;
     justify-items: center;
     gap: 3rem;
   }
@@ -327,5 +331,17 @@ main.introducao h1::after {
   width: 80px;
   color: white;
   font-size: 0.875rem;
+}
+
+@media (max-width: 66.25rem) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    width: 54rem;
+    margin-left: 4.375rem;
+  }
+
+  .exp-texto {
+    display: none;
+  }
 }
 /* #endregion */
