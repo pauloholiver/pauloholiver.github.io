@@ -226,7 +226,7 @@ main.introducao h1::after {
 /* #region Experiencia CSS */
 
 .experiencia {
-  max-width: 1300px;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 150px;
