@@ -71,13 +71,11 @@ a:visited {
   margin-right: 1.5rem;
 }
 
-@media (max-width: 43.75rem) {
+@media (max-width: 51.87rem) {
   .header {
     flex-direction: column;
     gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    width: 700px;
+    justify-items: center;
   }
 
   .header h1 {
@@ -85,7 +83,7 @@ a:visited {
   }
 
   .header img {
-    margin-left: 1rem;
+    margin-left: 3.5rem;
   }
 
   .header a {
@@ -213,7 +211,6 @@ main.introducao h1::after {
 @media (max-width: 51.87rem) {
   .introducao {
     grid-template-columns: 1fr;
-    width: 59rem;
     justify-items: center;
     gap: 3rem;
   }
@@ -336,8 +333,8 @@ main.introducao h1::after {
 @media (max-width: 66.25rem) {
   .experiencia {
     grid-template-columns: 1fr;
-    width: 54rem;
     margin-left: 4.375rem;
+    justify-items: center;
   }
 
   .exp-texto {
