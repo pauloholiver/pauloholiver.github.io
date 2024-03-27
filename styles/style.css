@@ -341,4 +341,18 @@ main.introducao h1::after {
     display: none;
   }
 }
+
+@media (max-width: 51.87rem) {
+  .ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    color: white;
+    text-align: left;
+  }
+
+  .experiencia {
+    margin-left: auto;
+  }
+}
 /* #endregion */
