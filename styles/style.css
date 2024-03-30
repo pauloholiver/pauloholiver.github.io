@@ -241,7 +241,7 @@ main.introducao h1::after {
   word-break: break-all;
   background-image: linear-gradient(to left, #c239ac, #79256c, #481440);
   color: black;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: end;
   max-width: 420px;
@@ -358,7 +358,7 @@ main.introducao h1::after {
 }
 /* #endregion */
 
-/* #region Experiencia CSS */
+/* #region Formacao CSS */
 
 .formacao {
   background: #fff;
@@ -381,7 +381,7 @@ main.introducao h1::after {
   word-break: break-all;
   background-image: linear-gradient(to left, #752267, #491141, #1d071a);
   color: black;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: end;
   max-width: 353px;
@@ -394,6 +394,11 @@ main.introducao h1::after {
   word-break: break-word;
   color: Black;
   margin-bottom: 50px;
+}
+
+.formacao-concluidos {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .formacao-lista {
@@ -439,6 +444,95 @@ main.introducao h1::after {
   text-align: center;
 }
 
+.faculdade-curso {
+  margin-right: 5px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.faculdade-instituicao {
+  margin-right: 5px;
+  text-align: center;
+}
+
+.formacao-cabecalho {
+  line-height: 3rem;
+}
+
+.conteudo-lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 50px 10px 10px;
+}
+
+.idioma-cabecalho {
+  line-height: 3rem;
+}
+
+.idioma-lista {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 50px 10px 10px;
+}
+
+.idioma-lista {
+  font-weight: 600;
+}
+
+.idioma-lista span {
+  font-weight: 500;
+}
+
+.cursos {
+  position: relative;
+}
+
+.idiomas {
+  position: relative;
+}
+
+.cursos li {
+  font-weight: bold;
+}
+
+.cursos::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(/media/cursos.svg) center center no-repeat;
+  position: absolute;
+  top: -10px;
+  left: -70px;
+}
+
+.idiomas::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(/media/idiomas.svg) center center no-repeat;
+  position: absolute;
+  top: -6px;
+  left: -75px;
+}
+
+.linguagens h3 {
+  margin: 3rem auto auto auto;
+  text-align: center;
+}
+
+.linguagens-lista {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
 @media (max-width: 66.25rem) {
   .formacao-container {
     grid-template-columns: 1fr;
@@ -455,3 +549,56 @@ main.introducao h1::after {
 }
 
 /*  #endregion */
+
+/* #region Rodapé CSS */
+
+.rodape {
+  max-width: 1200px;
+  min-height: 200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+.rodape-imagem {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 3rem;
+}
+
+.rodape-imagem img{
+  width: 70px;
+}
+
+.rodape-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12rem;
+  align-items: center;
+}
+.rodape-text {
+  margin-left: 15rem;
+}
+
+.contatos-lista li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+@media (max-width: 66.25rem) {
+  .rodape-grid {
+    grid-template-columns: 1fr;
+    /* margin-left: 4.375rem; */
+    justify-items: center;
+    gap: 5rem;
+  }
+
+  .rodape-text {
+    margin: auto 4rem;
+}
+
+/* #endregion */
