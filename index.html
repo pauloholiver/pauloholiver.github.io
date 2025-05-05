@@ -1,223 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Paulo Henrique Lopes - Fullstack Developer and UX/UI Designer
-    </title>
-    <meta
-      name="description"
-      content="Fullstack Developer and UX/UI Designer located in Dublin"
-    />
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
-
-  <body>
-    <header class="header">
-      <img src="media/logo-white.png" alt="Main logo" />
-      <h1>Paulo Henrique Lopes</h1>
-      <nav>
-        <ul class="header-menu">
-          <li><a href="#experiencia">Experience</a></li>
-          <li><a href="#formacao">Education</a></li>
-          <li><a href="#contato">Contact</a></li>
-        </ul>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Henrique Lopes | FullStack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-circle">PHL</div>
+            <div class="name">Paulo Henrique Lopes</div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#experience" class="en">Experience</a><a href="#experience" class="pt" style="display:none;">Experiência</a></li>
+                <li><a href="#education" class="en">Education</a><a href="#education" class="pt" style="display:none;">Formação</a></li>
+                <li><a href="#contact" class="en">Contact</a><a href="#contact" class="pt" style="display:none;">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <div class="language-toggle">
+            <button class="language-btn active" data-lang="en">EN</button>
+            <button class="language-btn" data-lang="pt">PT-BR</button>
+        </div>
     </header>
-    <main class="introducao">
-      <div>
-        <img src="media/avatar.png" alt="Avatar-photo" />
-      </div>
-      <div class="dev">
-        <h1>
-          FullStack<br />
-          Developer &<br />
-          UX/UI Designer
-        </h1>
-        <h3>Located in Dublin</h3>
-      </div>
-    </main>
 
-    <section class="experiencia" id="experiencia" aria-label="">
-      <h1 class="exp-texto">Experience</h1>
-      <div>
-        <p class="Sobre">
-          I develop projects such as <strong>Z-Totem</strong>, ERPs, and
-          APIs using <strong>HTML, CSS, TypeScript, C#, Node, GIT, databases, and JavaScript.</strong> 
-          For web applications, I also handle the <strong>UX and UI Design</strong> of the project.
-        </p>
-        <div class="empresa">
-          <span class="ano">2020-2021</span>
-          <p class="projeto-titulo">Bikecraft</p>
-          <p class="cargo-titulo">Fullstack Developer</p>
-          <h3 class="projeto-descricao">
-            In the Bikecraft project, I worked on the full development of the
-            HTML, CSS, and JavaScript for the website. Additionally, I provided
-            consulting for the Design.
-          </h3>
-          <ul class="empresa-habilidade">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>UX Design</li>
-            <li>UI Design</li>
-          </ul>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <!-- Placeholder image - replace with your actual image -->
+                <img src="media/avatar.png" alt="Paulo Henrique Lopes">
+            </div>
+            
+            <div class="hero-text">
+                <h1 class="title en">FullStack Developer & UX/UI Designer</h1>
+                <h1 class="title pt" style="display:none;">Desenvolvedor FullStack & Designer UX/UI</h1>
+                
+                <p class="subtitle en">Located in Dublin</p>
+                <p class="subtitle pt" style="display:none;">Localizado em Dublin</p>
+            </div>
         </div>
-        <div class="empresa">
-          <span class="ano">2021-2022</span>
-          <p class="projeto-titulo">Z-Totem</p>
-          <p class="cargo-titulo">Fullstack C#/WPF Developer</p>
-          <h3 class="projeto-descricao">
-            The self-service kiosk was developed for ZipSoftware. Similar to some competitors like Burger King and
-            McDonald's, it was used in restaurants for automated customer service without queues.
-          </h3>
-          <ul class="empresa-habilidade">
-            <li>WPF</li>
-            <li>.NET</li>
-            <li>SQL</li>
-            <li>UX Design</li>
-            <li>UI Design</li>
-          </ul>
-        </div>
-        <div class="empresa">
-          <span class="ano">2022-2024</span>
-          <p class="projeto-titulo">Conttrade Web</p>
-          <p class="cargo-titulo">Fullstack Developer</p>
-          <h3 class="projeto-descricao">
-            During my time at Conttrade, I worked on maintaining and implementing new features for the company's ERP system, 
-            as well as redesigning old routines and improving the entire system.
-          </h3>
-          <ul class="empresa-habilidade">
-            <li>.NET</li>
-            <li>C#</li>
-            <li>Postgres</li>
-            <li>SQL Server</li>
-            <li>Node</li>
-            <li>UX Design</li>
-            <li>UI Design</li>
-          </ul>
-        </div>
-      </div>
     </section>
 
-    <section class="formacao" id="formacao" aria-label="">
-      <div class="formacao-container">
-        <h1 class="formacao-texto">Education</h1>
-        <div>
-          <p class="formacao-historia">
-            My academic journey started with a solid foundation in <strong>Computing and Systems Analysis - ETEC</strong>, 
-            completed in 2013. Seeking further improvement, I decided to continue in the field for a <strong>Systems Information Analysis - 
-            University of Franca</strong>, graduating in 2017. Since then, I have immersed myself in a constant learning process, 
-            constantly striving to expand my horizons and <strong>master various technologies and new knowledge</strong> through intensive courses and on-the-job learning as a developer.<br />
-            This journey, marked by dedication and passion for knowledge, has shaped not only my education but also my commitment to 
-            facing daily challenges and seeking excellence in everything I do.
-          </p>
-
-          <div>
-            <h1 class="formacao-concluidos">Completed Education</h1>
-            <ul class="formacao-lista">
-              <li class="graduacao">
-                <span class="faculdade-tipo">Bachelor's</span>
-                <h3 class="faculdade-curso">Information Systems</h3>
-                <span class="faculdade-instituicao">Unifran</span>
-              </li>
-              <li class="graduacao">
-                <span class="faculdade-tipo">Technical</span>
-                <h3 class="faculdade-curso">
-                  Computing and Systems Analysis
-                </h3>
-                <span class="faculdade-instituicao">ETEC</span>
-              </li>
-              <li class="graduacao">
-                <span class="faculdade-tipo">Intensive Courses</span>
-                <h3 class="faculdade-curso">Various Certificates</h3>
-                <span class="faculdade-instituicao">Web</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="formacao-extra">
-            <div class="cursos">
-              <h3 class="formacao-cabecalho">Intensive Courses</h3>
-              <ul class="curso-lista">
-                <li class="conteudo-lista">
-                  UX Design & UI Design <span>56h</span>
-                </li>
-                <li class="conteudo-lista">
-                  Front End Origamid <span>230h</span>
-                </li>
-              </ul>
+    <section id="experience" class="experience">
+        <h2 class="section-title en">Experience</h2>
+        <h2 class="section-title pt" style="display:none;">Experiência</h2>
+        
+        <p class="section-intro en">I develop projects such as Z-Totem, ERPs, and APIs using HTML, CSS, TypeScript, C#, Node, GIT, databases, and JavaScript. For web applications, I also handle the UX and UI Design of the project.</p>
+        <p class="section-intro pt" style="display:none;">Desenvolvo projetos como Z-Totem, ERPs e APIs usando HTML, CSS, TypeScript, C#, Node, GIT, bancos de dados e JavaScript. Para aplicações web, também cuido do UX e UI Design do projeto.</p>
+        
+        <div class="experience-grid">
+            <!-- Experience 1 -->
+            <div class="experience-card">
+                <div class="experience-year">2022-2024</div>
+                <h3 class="experience-company">Conttrade Web</h3>
+                <p class="experience-role">Fullstack Developer</p>
+                <p class="experience-description en">During my time at Conttrade, I worked on maintaining and implementing new features for the company's ERP system, as well as redesigning old routines and improving the entire system.</p>
+                <p class="experience-description pt" style="display:none;">Na Conttrade, trabalhei na manutenção e implementação de novas funcionalidades para o sistema ERP da empresa, além de redesenhar rotinas antigas e melhorar todo o sistema.</p>
+                
+                <div class="tech-tags">
+                    <span class="tech-tag">.NET</span>
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">Postgres</span>
+                    <span class="tech-tag">SQL Server</span>
+                    <span class="tech-tag">Node</span>
+                    <span class="tech-tag">UX Design</span>
+                    <span class="tech-tag">UI Design</span>
+                </div>
             </div>
-            <div class="idiomas">
-              <h3 class="idioma-cabecalho">Languages</h3>
-              <ul>
-                <li class="idioma-lista">
-                  English 
-                  <span>/ Advanced</span>
-                </li>
-                <li class="idioma-lista">
-                  Spanish 
-                  <span>/ Basic</span>
-                </li>
-                <li class="idioma-lista">
-                  Portuguese - Brazil 
-                  <span>/ Native</span>
-                </li>
-              </ul>
+            
+            <!-- Experience 2 -->
+            <div class="experience-card">
+                <div class="experience-year">2021-2022</div>
+                <h3 class="experience-company">Z-Totem</h3>
+                <p class="experience-role">Fullstack C#/WPF Developer</p>
+                <p class="experience-description en">The self-service kiosk was developed for ZipSoftware. Similar to some competitors like Burger King and McDonald's, it was used in restaurants for automated customer service without queues.</p>
+                <p class="experience-description pt" style="display:none;">O quiosque de autoatendimento foi desenvolvido para a ZipSoftware. Semelhante a alguns concorrentes como Burger King e McDonald's, era usado em restaurantes para atendimento automatizado ao cliente sem filas.</p>
+                
+                <div class="tech-tags">
+                    <span class="tech-tag">WPF</span>
+                    <span class="tech-tag">.NET</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">UX Design</span>
+                    <span class="tech-tag">UI Design</span>
+                </div>
             </div>
-          </div>
-          <div class="linguagens">
-            <h3>Languages & Tools</h3>
-            <ul class="linguagens-lista">
-              <li><img src="media/angular.svg" alt="Angular logo" /></li>
-              <li><img src="media/figma.svg" alt="Figma logo" /></li>
-              <li><img src="media/sass.svg" alt="Sass logo" /></li>
-              <li><img src="media/css.svg" alt="CSS logo" /></li>
-              <li><img src="media/html.svg" alt="HTML logo" /></li>
-              <li><img src="media/javascrip.svg" alt="JavaScript logo" /></li>
-            </ul>
-          </div>
+            
+            <!-- Experience 3 -->
+            <div class="experience-card">
+                <div class="experience-year">2020-2021</div>
+                <h3 class="experience-company">Bikecraft</h3>
+                <p class="experience-role">Fullstack Developer</p>
+                <p class="experience-description en">In the Bikecraft project, I worked on the full development of the HTML, CSS, and JavaScript for the website. Additionally, I provided consulting for the Design.</p>
+                <p class="experience-description pt" style="display:none;">No projeto Bikecraft, trabalhei no desenvolvimento completo do HTML, CSS e JavaScript para o site. Além disso, forneci consultoria para o Design.</p>
+                
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">UX Design</span>
+                    <span class="tech-tag">UI Design</span>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <footer class="rodape" id="contato">
-      <div class="rodape-grid">
-        <h2 class="rodape-text">
-          I am available for new projects at the moment. Get in touch with me and let's schedule a chat 👋
-        </h2>
-        <ul class="contatos-lista">
-          <li>
-            <img src="media/email.svg" alt="Email icon" />
-            <a href="mailto:pauloholiver@hotmail.com.br">Send email</a>
-          </li>
-          <li>
-            <img src="media/phone.svg" alt="Phone icon" />
-            <a
-              href="http://api.whatsapp.com/send/?phone=5516991799698&text=Hello,+I+saw+your+portfolio+and+have+a+question&type=phone_number&app_absent=0"
-              >WhatsApp</a
-            >
-          </li>
-          <li>
-            <img src="media/linkedin.svg" alt="LinkedIn icon" />
-            <a href="https://www.linkedin.com/in/paulo-henrique-lopes-559587103/">LinkedIn</a>
-          </li>
-          <li>
-            <img src="media/github.svg" alt="" />
-            <a href="https://github.com/pauloholiver">Github</a>
-          </li>
-          <li>
-            <img src="media/instagram.svg" alt="" />
-            <a href="https://www.instagram.com/plopes.h/">Instagram</a>
-          </li>
-        </ul>        
-      </div>
-      <div class="rodape-imagem">
-        <img class="logo" src="media/logo-white.png" alt="">
-        <h2>All rights reserved.</h2>
-      </div>
+    <section id="education" class="education">
+        <h2 class="section-title en">Education</h2>
+        <h2 class="section-title pt" style="display:none;">Formação</h2>
+        
+        <p class="section-intro en">My academic journey started with a solid foundation in Computing and Systems Analysis - ETEC, completed in 2013. Seeking further improvement, I decided to continue in the field for a Systems Information Analysis - University of Franca, graduating in 2017. Since then, I have immersed myself in a constant learning process, constantly striving to expand my horizons and master various technologies and new knowledge through intensive courses and on-the-job learning as a developer. This journey, marked by dedication and passion for knowledge, has shaped not only my education but also my commitment to facing daily challenges and seeking excellence in everything I do.</p>
+        <p class="section-intro pt" style="display:none;">Minha jornada acadêmica começou com uma base sólida em Análise e Desenvolvimento de Sistemas - ETEC, concluída em 2013. Buscando aprimoramento, decidi continuar na área para Análise de Sistemas de Informação - Universidade de Franca, formando-me em 2017. Desde então, mergulhei em um processo constante de aprendizado, sempre buscando expandir meus horizontes e dominar várias tecnologias e novos conhecimentos através de cursos intensivos e aprendizado no trabalho como desenvolvedor. Esta jornada, marcada por dedicação e paixão pelo conhecimento, moldou não apenas minha formação, mas também meu compromisso em enfrentar desafios diários e buscar a excelência em tudo o que faço.</p>
+        
+        <div class="education-grid">
+            <!-- Education 1 -->
+            <div class="education-card">
+                <div class="education-type en">Bachelor's</div>
+                <div class="education-type pt" style="display:none;">Bacharelado</div>
+                <h3 class="education-course en">Information Systems</h3>
+                <h3 class="education-course pt" style="display:none;">Análise de Sistemas</h3>
+                <p class="education-institution">Unifran</p>
+            </div>
+            
+            <!-- Education 2 -->
+            <div class="education-card">
+                <div class="education-type en">Technical</div>
+                <div class="education-type pt" style="display:none;">Técnico</div>
+                <h3 class="education-course en">Computing and Systems Analysis</h3>
+                <h3 class="education-course pt" style="display:none;">Análise e Desenvolvimento de Sistemas</h3>
+                <p class="education-institution">ETEC</p>
+            </div>
+        </div>
+        
+        <h3 class="section-title en" style="margin-top: 80px; font-size: 1.8rem;">Intensive Courses</h3>
+        <h3 class="section-title pt" style="margin-top: 80px; font-size: 1.8rem; display:none;">Cursos Intensivos</h3>
+        
+        <div class="education-grid">
+            <!-- Course 1 -->
+            <div class="education-card">
+                <h3 class="education-course">Web Development</h3>
+                <p class="education-institution en">Various Certificates</p>
+                <p class="education-institution pt" style="display:none;">Vários Certificados</p>
+            </div>
+            
+            <!-- Course 2 -->
+            <div class="education-card">
+                <h3 class="education-course">UX Design & UI Design</h3>
+                <p class="education-institution">56h</p>
+            </div>
+            
+            <!-- Course 3 -->
+            <div class="education-card">
+                <h3 class="education-course">Front-End (Origamid)</h3>
+                <p class="education-institution">230h</p>
+            </div>
+        </div>
+        
+        <h3 class="section-title en" style="margin-top: 80px; font-size: 1.8rem;">Languages</h3>
+        <h3 class="section-title pt" style="margin-top: 80px; font-size: 1.8rem; display:none;">Idiomas</h3>
+        
+        <div class="languages-grid">
+            <!-- Language 1 -->
+            <div class="language-item">
+                <div class="language-icon">🇬🇧</div>
+                <div>
+                    <p class="education-course">English</p>
+                    <p class="education-institution en">Advanced</p>
+                    <p class="education-institution pt" style="display:none;">Avançado</p>
+                </div>
+            </div>
+            
+            <!-- Language 2 -->
+            <div class="language-item">
+                <div class="language-icon">🇪🇸</div>
+                <div>
+                    <p class="education-course">Spanish</p>
+                    <p class="education-institution en">Basic</p>
+                    <p class="education-institution pt" style="display:none;">Básico</p>
+                </div>
+            </div>
+            
+            <!-- Language 3 -->
+            <div class="language-item">
+                <div class="language-icon">🇧🇷</div>
+                <div>
+                    <p class="education-course en">Portuguese (Brazil)</p>
+                    <p class="education-course pt" style="display:none;">Português (Brasil)</p>
+                    <p class="education-institution en">Native</p>
+                    <p class="education-institution pt" style="display:none;">Nativo</p>
+                </div>
+            </div>
+        </div>
+        
+        <h3 class="section-title en" style="margin-top: 80px; font-size: 1.8rem;">Skills & Tools</h3>
+        <h3 class="section-title pt" style="margin-top: 80px; font-size: 1.8rem; display:none;">Habilidades & Ferramentas</h3>
+        
+        <div class="skills-grid">
+            <span class="skill-badge">Angular</span>
+            <span class="skill-badge">C#</span>
+            <span class="skill-badge">.NET</span>
+            <span class="skill-badge">WPF</span>
+            <span class="skill-badge">Figma</span>
+            <span class="skill-badge">Sass</span>
+            <span class="skill-badge">HTML</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">JavaScript</span>
+        </div>
+    </section>
 
+    <footer id="contact">
+        <div class="footer-cta en">I am available for new projects at the moment. Get in touch with me and let's schedule a chat <span>👋</span></div>
+        <div class="footer-cta pt" style="display:none;">Estou disponível para novos projetos no momento. Entre em contato comigo e vamos marcar uma conversa <span>👋</span></div>
+        
+        <div class="contact-grid">
+            <a href="mailto:pauloholiver@hotmail.com.br" class="contact-item">
+                <div class="contact-icon">📧</div>
+                <span class="en">Email</span>
+                <span class="pt" style="display:none;">E-mail</span>
+            </a>
+            
+            <a href="http://api.whatsapp.com/send/?phone=353838217362&text=Hello,+I+saw+your+portfolio+and+have+a+question&type=phone_number&app_absent=0" class="contact-item">
+                <div class="contact-icon">📞</div>
+                <span>WhatsApp</span>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/paulo-henrique-phl/" class="contact-item">
+                <div class="contact-icon">💼</div>
+                <span>LinkedIn</span>
+            </a>
+            
+            <a href="https://github.com/pauloholiver" class="contact-item">
+                <div class="contact-icon">💻</div>
+                <span>GitHub</span>
+            </a>
+            
+            <a href="https://www.instagram.com/plopes.h/" class="contact-item">
+                <div class="contact-icon">📸</div>
+                <span>Instagram</span>
+            </a>
+        </div>
+        
+        <div class="copyright en">All rights reserved.</div>
+        <div class="copyright pt" style="display:none;">Todos os direitos reservados.</div>
     </footer>
-  </body>
+
+    <script>
+        // Language Toggle Functionality
+        const languageBtns = document.querySelectorAll('.language-btn');
+        
+        languageBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                languageBtns.forEach(b => b.classList.remove('active'));
+                
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                // Get selected language
+                const lang = btn.dataset.lang;
+                
+                // Show/hide language specific elements
+                document.querySelectorAll('.en').forEach(el => {
+                    el.style.display = lang === 'en' ? 'block' : 'none';
+                });
+                
+                document.querySelectorAll('.pt').forEach(el => {
+                    el.style.display = lang === 'pt' ? 'block' : 'none';
+                });
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=pauloholiver/fer" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
 </html>
